@@ -1,0 +1,196 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+    line-height: 12px;
+}
+
+#header {
+    text-align: left;
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+.navlinksactive {
+    background-color: yellow;
+    width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 25px;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.navlinks {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 25px;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.navgroup {
+    margin-top: 50px;
+}
+
+nav {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#maintitle {
+    font-size: 20px;
+    margin-top: 125px;
+}
+
+hr {
+    border-top: 3px solid;
+}
+
+#activepage {
+    background-color: yellow;
+    width: 15%;
+    text-align: center;
+}
+
+/* .navlinks:hover{
+    background-color: yellow;
+    width: 15%;
+} <--- shows hover states for directory. not used for this assighment*/
+ 
+#products {
+    display: block;
+    text-align: center;
+    width: 40px;
+    font-size: 20px;
+  }
+  
+main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 28%;
+  }
+
+.productbox {
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    margin-bottom: 30px;
+    width: 320px;
+}
+.productbox:hover {
+    background-color: yellow;
+}
+
+#products img {
+    border-style: solid;
+    border-width: 3px;
+}
+
+.producttext {
+    text-align: left;
+    padding-left: 14px;
+}
+
+.mainproductimage {
+    text-align: center;
+}
+
+.mainproductimage img {
+    border-style: solid;
+    border-width: 3px;
+}
+
+#productdescription {
+    display: block;
+    text-align: left;
+    width: 30%;
+    line-height: normal;
+    font-size: 23px;
+    margin-left: 420px;
+    margin-top: 40px;
+    margin-bottom: 75px;
+}
+
+#selectoptions {
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.dropdown {
+    margin-left: 420px;
+    margin-bottom: 50px;
+}
+
+.glazingoptions {
+    padding: 8px 12px;
+    border: 3px solid;
+    width: 43%;
+    font-size: 23px;
+    text-align: left;
+}
+
+.packsize {
+    padding: 8px 12px;
+    border: 3px solid;
+    width: 43%;
+    font-size: 23px;
+    text-align: left;
+}
+
+/* hide input valuable; not used, keep for later
+
+input {
+    display: none;
+}
+
+*/
+
+#addtocart {
+    text-align: center;
+}
+
+#addtocart a {
+    border-style: solid;
+    border-width: 3px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    margin-left: 0px;
+    background-color: yellow;
+}
+
+.cartdescription {
+    text-align: center;
+    font-size: 15px;
+    line-height: 5px;
+    padding-bottom: 50px;
+}
+
+#checkoutdivide {
+    padding-left: 30%;
+    width: 40%;
+}
+
+/* Link Styling */
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+/* Spacer- used throughout design*/
+
+.spacer {
+    margin-top: 10px;
+}
