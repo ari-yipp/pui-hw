@@ -1,5 +1,7 @@
 # PUI homework
 
-Deployed website: `https://ari-yipp.github.io/pui-hw/solution-hw1/gallery.html`
-
 Repository link: `https://github.com/ari-yipp/pui-hw`
+
+HW 1: Deployed website: `https://ari-yipp.github.io/pui-hw/solution-hw1/gallery.html`
+
+HW 2: Deployed Website: `https://ari-yipp.github.io/pui-hw/solution-hw2/gallery.html`

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Iris Yip PUI Hw.2 | Fall '22</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+
+   <div id='header'>
+
+    <!--left nav -->
+     <div id="left-logo">
+        <a href="./gallery.html"><img src="./logo/logo-01.svg" width="350" alt="black and white vector logo of a cinnamon roll, with the words 'bun bun bake shop' next to it"></a>
+     </div>
+
+    <!--right nav-->
+
+     <div id="right-title">
+       <!--top links-->
+       <div id="links">
+        <div class="nav-link">
+            <h2><a href="./cart.html">CART</a></h2>
+        </div>
+        <div class="nav-linkactive">
+            <h2><a href="./gallery.html">PRODUCTS</a></h2>
+        </div>
+       </div>
+
+       <!--line break-->
+       <div class="top-line">
+         <hr>
+       </div>
+
+      <!--catchphrase i guess -->
+      <h1>Original Cinnamon Roll</h1>
+     </div>
+   </div>
+
+   <div id="detail-body">
+
+        <div id="detail-left">
+            <img src="./products/original-cinnamon-roll.jpg" width = "600" alt="single roll of original flavored cinnamon roll on a plate, garnished with a stick of cinnamon"/>
+        </div>
+
+        <div id="detail-right">
+            <h2>Customize our delicious, hand-made cinnamon roll to your liking!</h2>
+
+            <!--option select-->
+            
+            <div id="selectoptions">
+
+                <!--glazing options dropdown-->
+                <div class="dropdown">
+                   <h2><label for="glazingoptions">Glazing:</label></h2>
+       
+                   <select class="glazingoptions" id="glazingoptions">
+                       <option value="keep-original">Keep Original</option>
+                       <option value="sugar-milk">Sugar Milk</option>
+                       <option value="vanilla-sugar">Vanilla Sugar</option>
+                       <option value="double-chocolate">Double Chocolate</option>
+                   </select>
+                </div>
+       
+                <!--pack size dropdown-->
+                <div class="dropdown">
+                    <h2><label for="packsize">Pack Size:</label></h2>
+
+                   <select class="packsize" id="packsize">
+                       <option value="1">1</option>
+                       <option value="3">3</option>
+                       <option value="6">6</option>
+                       <option value="12">12</option>
+                   </select>
+                </div>
+                
+                <!--Price and Add to Cart-->
+                <div id="addtocart">
+                    <div id="detail-price">
+                        <h2>$2.49</h2>
+                    </div>
+
+                    <div id="detail-addtocart">
+                        <h2><a href="./cart.html">Add to Cart</a></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </body>
+</html>
