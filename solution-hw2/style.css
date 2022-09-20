@@ -44,12 +44,14 @@ a:visited {
 .nav-link {
     margin-right: 80px;
     padding: 0px 2px 2px 2px;
+    /* font-weight: 200; */
 }
 
 .nav-linkactive a {
     margin-right: 80px;
     padding: 2px 2px 2px 2px;
     background-color: yellow;
+    /* font-weight: 900; */
 
 }
 
@@ -97,7 +99,7 @@ hr {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 80%;
+    width: 85%;
     text-align: center;
 }
 
