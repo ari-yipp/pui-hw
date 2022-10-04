@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Iris Yip PUI Hw.2 | Fall '22</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./js/detailsPage.js"></script>
+  </head>
+  <body>
+
+    <div id='header'>
+ 
+     <!--left nav -->
+      <div id="left-logo">
+         <a href="./gallery.html"> <img src="./logo/logo-01.svg" width="350" alt="black and white vector logo of a cinnamon roll, with the words 'bun bun bake shop' next to it"> </a>
+      </div>
+ 
+     <!--right nav-->
+     <!-- I'm just gonna extend the title LOL -->
+ 
+      <div id="right-title">
+        <!--top links-->
+        <div id="links">
+         <div class="nav-linkactive">
+             <h2><a href="./cart.html">CART</a></h2>
+         </div>
+         <div class="nav-link">
+             <h2><a href="./gallery.html">PRODUCTS</a></h2>
+         </div>
+        </div>
+ 
+        <!--line break-->
+        <div class="top-line">
+          <hr>
+        </div>
+ 
+       <!--cart title -->
+       <h1 id="shoppingcart">  Shopping Cart</h1>
+
+       <!--shopping cart contents-->
+       <div id="cart">
+
+            <!--cart items-->
+            <div class="cart-item">
+                <div class="image-left">
+                    <img src="products/original-cinnamon-roll.jpg" width="110" alt="single roll of original flavored cinnamon roll on a plate, garnished with a stick of cinnamon">
+                    <div class="cancel-button">
+                        <a href="#"><p>Remove</p></a>
+                    </div>
+                </div>
+                <div class="cart-itemtext">
+                    <h2>Original Cinnamon Roll</h2>
+                    <h2>Glazing: Keep Original</h2>
+                    <h2>Pack Size: 1</h2>
+                </div>
+                <div class="cart-itemprice">
+                    <h1>$ 2.49</h1>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <div class="image-left">
+                    <img src="products/double-chocolate-cinnamon-roll.jpg" width="110" alt="single roll of double chocolate cinnamon roll">
+                    <div class="cancel-button">
+                        <a href="#"><p>Remove</p></a>
+                    </div>
+                </div>
+                <div class="cart-itemtext">
+                    <h2>Double Chocolate Cinnamon Roll</h2>
+                    <h2>Glazing: Sugar Milk</h2>
+                    <h2>Pack Size: 6</h2>
+                </div>
+                <div class="cart-itemprice">
+                    <h1>$ 27.49</h1>
+                </div>
+            </div>
+
+            <div id="line">
+                <hr>
+            </div>
+
+            <!--total price-->
+
+            <div id="totalprice">
+                <div id="total-text">
+                    <h1>Total</h1>
+                    <h1 id="total-price">$ 29.94</h1>
+                </div>
+            </div>
+
+            <!--check out button-->
+            <div id="checkout">
+                <h2><a href="#">Checkout</a></h2>
+            </div>
+
+       </div>
+      </div>
+    </div>
+  </body>
+</html>
