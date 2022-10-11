@@ -96,8 +96,8 @@ function createElement(roll){
     const template = document.querySelector('#roll-template');
     const clone = template.content.cloneNode(true);
     roll.element = clone.querySelector('.cart-item');
-    const rollListElement = document.querySelector('#cart');
-    rollListElement.prepend(roll.element); 
+    const cartElement = document.querySelector('#cart');
+    cartElement.prepend(roll.element); 
 
     const btnRemove = roll.element.querySelector('.remove');
     btnRemove.addEventListener('click', () => {
@@ -122,9 +122,9 @@ function updateRolls(roll) {
     let rollPrice = document.querySelector('.cart-itemprice > h1');
         let glazingLetters = roll.glazing.replace(" ", ""); //take out spaces
         let glazingLowerCaseLetters = glazingLetters[0].toLowerCase()+glazingLetters.slice(1); //turn to lowercase
-        let glazingCostDiff = glazingAdaption[glazingLowerCaseLetters];
+        let glazingCostExtra = glazingAdaption[glazingLowerCaseLetters];
 
-    let rollTotal = totalCost(roll.basePrice, packMultiplier[roll.size], glazingCostDiff);
+    let rollTotal = totalCost(roll.basePrice, packMultiplier[roll.size], glazingCostExtra);
         roll.totalPrice = parseFloat(rollTotal).toFixed(2);
     
     rollPrice.innerHTML = "$ " + rollTotal;
