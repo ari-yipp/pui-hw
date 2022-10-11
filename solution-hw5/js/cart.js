@@ -1,5 +1,5 @@
 // idk why i have to call it here it just doesn't work??
-let allRollsPrice = document.querySelector('#total-price');
+let rollsTotal = document.querySelector('#total-price');
 
 // SETUP: roll class / contructor + price info
 class Roll {
@@ -18,7 +18,6 @@ class Roll {
         this.element = null;
     }
 }
-
 // store prices
 let packMultiplier ={
     "1": 1,
@@ -27,14 +26,7 @@ let packMultiplier ={
     "12": 10
 }
 
-let glazingAdaption= {
-    original: 0,
-    sugarMilk: 0,
-    vanillaMilk: 0.50,
-    doubleChocolate: 1.50
-};
-
-// 4 NEW ROLLS slay
+// ADD FOUR NEW ROLLS
 // empty
 let cartItems = [];
 
@@ -84,9 +76,9 @@ for (let i=0; i < 4; i++) {
 // deleting rolls
 function deleteRoll(roll) {
     roll.element.remove();
-    cartItems.pop(roll); //lab ref used
-    let numPrice = rollsTotal.innerText.replace("$ ", "");
-    let newTotal = (parseFloat(numPrice) - parseFloat(roll.totalPrice)).toFixed(2);
+    cartItems.pop(roll);
+    let numTotal = rollsTotal.innerText.replace("$ ", "");
+    let newTotal = (parseFloat(numTotal) - parseFloat(roll.totalPrice)).toFixed(2);
     rollsTotal.innerText = "$ " + newTotal;
 }
 
@@ -96,8 +88,8 @@ function createElement(roll){
     const template = document.querySelector('#roll-template');
     const clone = template.content.cloneNode(true);
     roll.element = clone.querySelector('.cart-item');
-    const cartElement = document.querySelector('#cart');
-    cartElement.prepend(roll.element); 
+    const rollListElement = document.querySelector('#cart');
+    rollListElement.prepend(roll.element); 
 
     const btnRemove = roll.element.querySelector('.remove');
     btnRemove.addEventListener('click', () => {
@@ -112,29 +104,36 @@ function totalCost(basePrice, packSize, glazing){
     return ((basePrice + glazing) * packSize).toFixed(2);
 }
 
+
 // FUNCTIONALITY: dynamically updating rolls display
 // update rolls
+// asked for help on how to do the prices
 function updateRolls(roll) {
 
-    // asked for help on how to do the prices
-
-    // price at roll listing --> use pricing adapters
+    // price at roll listing, using pricing adapters
+    let glazingAdaption= {
+        original: 0,
+        sugarMilk: 0,
+        vanillaMilk: 0.50,
+        doubleChocolate: 1.50
+    };
+    
     let rollPrice = document.querySelector('.cart-itemprice > h1');
         let glazingLetters = roll.glazing.replace(" ", ""); //take out spaces
         let glazingLowerCaseLetters = glazingLetters[0].toLowerCase()+glazingLetters.slice(1); //turn to lowercase
-        let glazingCostExtra = glazingAdaption[glazingLowerCaseLetters];
+        let glazingCostDiff = glazingAdaption[glazingLowerCaseLetters];
 
-    let rollTotal = totalCost(roll.basePrice, packMultiplier[roll.size], glazingCostExtra);
+    let rollTotal = totalCost(roll.basePrice, packMultiplier[roll.size], glazingCostDiff);
         roll.totalPrice = parseFloat(rollTotal).toFixed(2);
     
     rollPrice.innerHTML = "$ " + rollTotal;
 
     //price at checkout
-    let numTotal= allRollsPrice.innerText.replace("$ ", "");
+    let numTotal= rollsTotal.innerText.replace("$ ", "");
         let totalNum = parseFloat(numTotal) + parseFloat(rollTotal);
         let total = totalNum.toFixed(2);
 
-    allRollsPrice.innerText= "$ " + total;
+    rollsTotal.innerText= "$ " + total;
 
     //dynamically populate
     let rollName = document.querySelector('.cart-itemname'); // change name
