@@ -84,10 +84,10 @@ for (let i=0; i < 4; i++) {
 // deleting rolls
 function deleteRoll(roll) {
     roll.element.remove();
-    cartItems.pop(roll);
-    let onlyDigits = allRollsPrice.innerText.replace("$ ", "");
-    let newTotal = (parseFloat(onlyDigits) - parseFloat(roll.totalPrice)).toFixed(2);
-    allRollsPrice.innerText = "$ " + newTotal;
+    cartItems.pop(roll); //lab ref used
+    let numPrice = rollsTotal.innerText.replace("$ ", "");
+    let newTotal = (parseFloat(numPrice) - parseFloat(roll.totalPrice)).toFixed(2);
+    rollsTotal.innerText = "$ " + newTotal;
 }
 
 // RETRIEVING INFO: retrieving template + costs
