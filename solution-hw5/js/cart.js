@@ -151,4 +151,5 @@ function updateRolls(roll) {
 
     let rollImage = document.querySelector('.cart-rollimage'); // change image
     rollImage.src = './products/' + rolls[roll.type].imageFile;
+    
 }
