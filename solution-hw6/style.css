@@ -1,0 +1,296 @@
+/* body styles */
+
+body {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+
+/* header section of page */
+
+#header {
+    display: flex;
+    margin-top: 40px;
+}
+
+#left-logo {
+    width: 35%;
+}
+
+#right-title {
+    width: 65%; 
+}
+
+#shoppingcart {
+    text-align: left;
+}
+
+#links {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*remove link underline in main menu*/
+
+#links a:link {
+    text-decoration: none;
+}
+
+.nav-link {
+    margin-right: 80px;
+    padding: 0px 2px 2px 2px;
+    /* font-weight: 200; */
+}
+
+.nav-linkactive a {
+    margin-right: 80px;
+    padding: 2px 2px 2px 2px;
+    background-color: yellow;
+    /* font-weight: 900; */
+
+}
+
+#top- {
+    text-align: left;
+}
+
+#right-title h1 {
+    font-size: 35px;
+}
+
+hr {
+    border-top: 3px solid;
+    margin-bottom: 9%;
+}
+
+/* product section */
+
+.flex-item {
+    display: block;
+    padding: 10px 10px 0 10px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.flex-item img {
+    border-style: solid;
+    border-width: 3px;
+    margin-bottom: 15px;
+}
+
+.flex-item:hover {
+    background-color: yellow;
+}
+
+.info-container {
+    text-align: left;
+}
+
+.info-container h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.flexcontainer {
+    margin-top: 7%;
+
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    text-align: center;
+}
+
+/* cart page */
+
+#cart {
+    margin-top: 100px;
+}
+
+.cart-item {
+    display: flex;
+    text-align: left;
+    margin-bottom: 15px;
+
+    font-size: 16px;
+}
+
+.cart-itemtext {
+    line-height: 50%;
+}
+
+.cart-item img {
+    margin-right: 40px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.cart-itemprice {
+    flex-grow: 3;
+    margin-right: 80px;
+    justify-items: end;
+}
+
+.cart-itemprice h1 {
+    text-align: right;
+}
+
+.cart-itemprice h1 {
+    justify-content: end;
+}
+
+.cancel-button {
+    line-height: 0.1;
+    margin-bottom: 20px;
+}
+
+/*is this the right way? lmfao fuck*/
+
+#cart-itemprice h2 {
+    margin-top: 40px;
+}
+
+/* Bottom checkout check */
+
+#line > hr {
+    margin-bottom: 8px;
+}
+
+#totalPrice {
+    display: flex;
+    padding-top: 3px; /* offset button border-width */
+    padding-right: 32px;
+}
+
+#dollar-sign {
+    padding-top: 3px;
+}
+
+#totalPrice h2 {
+    color: black;
+}
+#total-text {
+    display: flex;
+    margin-left: 150px;
+    justify-items: end;
+}
+
+#total-price {
+    flex-grow: 3;
+    text-align: right;
+    margin-right: 80px;
+}
+
+#checkout {
+    text-align: right;
+    margin-right: 80px;
+    margin-top: 50px;
+
+}
+
+#checkout a {
+    text-align: right;
+
+    border-style: solid;
+    border-width: 3px;
+    background-color: yellow;
+
+    padding: 10px 35px 10px 35px;
+    text-decoration: none;
+}
+
+/* Detail Page */
+
+#detail-body {
+    display: flex;
+    text-align: left;
+
+    margin-top: 50px;
+}
+
+#detail-left {
+    margin-left: 100px;
+}
+
+#detail-left img {
+    border-style: solid;
+    border-width: 3px;
+}
+
+#detail-right {
+    margin-top: 5px;
+    margin-left: 75px;
+    margin-right: 50px;
+    font-size: 17px;
+}
+
+#detail-right > h1 {
+    font-size: 30px;
+}
+
+/* Detail Page Dropdowns */
+
+#selectoptions {
+    margin-top: 75px;
+    margin-bottom: 30px;
+}
+
+.dropdown {
+    margin-bottom: 25px;
+    line-height: 5px;
+}
+
+#glazingOptions {
+    padding: 8px 12px;
+    border: 3px solid;
+    width: 98%; /* 100% didn't look right imo */
+    font-size: 23px;
+    text-align: left;
+}
+
+#packSize {
+    padding: 8px 12px;
+    border: 3px solid;
+    width: 98%;
+    font-size: 23px;
+    text-align: left;
+}
+
+#addtocart {
+    display: flex;
+    justify-content: end;
+    line-height: 10px;
+
+    margin-top: 100px;
+    margin-right: 2%; /* match 98% width of glazing-options*/
+}
+
+#detail-price {
+    padding-top: 3px; /* offset button border-width */
+    padding-right: 32px;
+}
+
+#detail-addtocart {
+    
+    border-style: solid;
+    border-width: 3px;
+    background-color: yellow;
+
+    padding-left: 30px;
+    padding-right: 45px;
+
+}
+
+#detail-addtocart a {
+    text-decoration: none;
+}
+
