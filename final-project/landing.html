@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Iris Yip PUI Final | Fall '22</title>
+
+    <!--bootstrap v5.1-->
+    <meta name= viewport content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <script defer src="js/bootstrap.bundle.js"></script>
+
+
+    <!--native styling and js-->
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="landing.js"></script>
+  </head>
+
+
+  <body>
+
+    <!--slide one: title section-->
+
+     <header id="header">
+        <div id="header-left">
+            <div class="dropdown">
+                <a class="dropdownbtn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Poison Directory
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">back to top.</a></li>
+                  <li><a class="dropdown-item" href="#section-two">intro.</a></li>
+                  <li><a class="dropdown-item" href="#section-four">composition.</a></li> <!--swapped 3/4-->
+                  <li><a class="dropdown-item" href="#section-three">acute symptoms.</a></li>
+                  <li><a class="dropdown-item" href="#section-five">main causes.</a></li>
+                  <div class="dropdown-divider"></div>
+                  <li><a class="dropdown-item" href="#section-six">sources.</a></li>
+                </ul>
+              </div>
+        </div>
+
+        <div id="header-right">
+            <button id="lightbutton"><h4>Light</h4></button>
+            <button id="darkbutton"><h4>Dark</h4></button>
+        </div>
+    </header>
+
+
+    <!--section one-->
+
+    <main id="section-one">
+        <div id="main-title">
+            <h1><div id="white-text">How Much Do You Know About</div>Arsenic Poisoning?</h1>
+        </div>
+
+        <div class="main-subtitle">
+            <h3 class="hover-underline-animation">here's what you may want to keep in mind.</h3>
+        </div>
+
+        <div class="down-button"> 
+            <a class="downbtn" href="#intro" role="button">→</a>
+        </div>
+    </main>
+
+    <footer>
+        <div id="about">
+            <h3>A B O U T</h3>
+            <h4>Iris Yip | Programmable User Interface Final</h4>
+        </div>
+    </footer>
+    
+
+    <!--video bg-->
+
+    <div class="video-background">
+        <div class="video-wrap">
+            <div id="video">
+                <video id="bgvid" autoplay loop muted playsinline>
+                    <source src="./assets/bg/dark_bg.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!--img bg-->
+     <div class="image-background">
+        <img id="imgbg" src="./assets/bg/dark_bgillust.png" style= "width:100%">
+    </div>
+
+    <!--slide two: intro section-->
+
+    <main id="section-two">
+        <div id="intro">
+            <h1 class="hover-underline-animation">intro.</h1>
+            <p id="introtext">Arsenic is one of the most interesting and enigmatic elements of the periodic table. 
+               Its use as an intentional poison has been known for centuries and occasionally occurs today. 
+               Arsenic has been called the <button class="pop-up" data-text="For centuries, arsenics image as a poison has been 
+               inextricably tied to images of foul play.">King of Poisons,</button> John Parascandola examines the surprising history of this deadly, 
+               because it had been used to poison royalty 
+               and thus alter who would ascend to the throne. 
+               
+               The development of the Marsh test, by James Marsh in 1830s, a simple analytical 
+               method to detect arsenic, may be a reason why intentional arsenic poisonings decreased. 
+            </p>
+            <div class="down-button"> 
+                <a class="downbtn" href="#section-four" role="button">→</a>
+            </div>
+        </div>
+    </main>
+
+    <main id="section-four">
+        <div id="chemical-compositions">
+            <h1 class="hover-underline-animation">chemical compositions.</h1>
+                <div class="container">
+                    <div class="row">
+
+                        <!--first card-->
+                        <div class="col-sm-6">
+                            <!--flip card-->
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img id="arsenic-front" src="./assets/graphics/default mode/chemicals/arsenicacid_DM_comp.png" alt="photo" style="width: 100%;">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <img id="arsenic-back" src="./assets/graphics/default mode/chemicals/arsenicacid_DM_info.png" alt="photo" style="width: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--second card-->
+                        <div class="col-sm-6">
+                            <!--flip card-->
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img id="arseno-front" src="./assets/graphics/default mode/chemicals/arsenobetaine_DM_comp.png" alt="photo" style="width: 100%;">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <img id="arseno-back" src="./assets/graphics/default mode/chemicals/arsenobetaine_DM_info.png" alt="photo" style="width: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                <div class="down-button"> 
+                    <a class="downbtn" href="#section-three" role="button">→</a>
+                </div>
+    </main>
+
+    <!--slide three: more info-->
+
+    <main id="section-three">
+        <div id="acute-effects">
+        <h1 class="hover-underline-animation">acute symptoms</h1>
+            <p>The immediate symptoms of acute arsenic poisoning include persistent and uncontrollable vomiting,<button class="pop-up" data-text="Drinking arsenic-laden water over a long period of time can also lead to lead poisoning, and severe hallucinations.">abdominal pain and diarrhoea. </button> These are followed by numbness and tingling 
+            of the extremities, muscle cramping, if untreated, eventual death.
+            <br>
+            <br>
+            The lethal dose of arsenic in humans is<button class="pop-up" data-text="This is roughyl equivalent to 140 to 1400 mg for an average-sized adult.">2-20 mg/kg A 140-mg</button> potentially lethal dose is the same as 0.145 grams. Less than 1/8 teaspoon can be fatal to a healthy adult, 
+            while even less could kill a child, an adult with impaired health, or an elderly person.
+            </p>
+        </div>
+        <div class="down-button"> 
+            <a class="downbtn" href="#section-five" role="button">→</a>
+        </div>
+    </main>
+
+
+    <main id="section-five">
+        <div id="causes">
+            <h1 class="hover-underline-animation">main causes.</h1>
+            <div id="causes-list">
+                <h1><button class="pop-up" data-text="Food near major factories or industrial plants are more likely to be
+                    contaminated with high levels of arsenic. Food grown with soil or water contaminated with such materials will be unsafe to consume, even when cooked"> 1. contaminated food.</button></h1>
+                <h1><button class="pop-up" data-text="Tobacco contains trace amounts of arsenic in its composition. Smoking makes it harder for 
+                    your body to get rid of arsenic before it damages your cells. Arsenic exposure and smoking can increase your risk of lung, kidney and bladder cancer, and heart disease.">2. smoking tabacco</button></h1>
+                <h1><button class="pop-up" data-text="
+                    In a national study of groundwater quality, the USGS found that arsenic was detected in nearly half of the wells sampled in parts of aquifers used for drinking-water supply at a concentration of 1 µg/L or greater. 
+                    Detections were more common and concentrations generally were higher in the west than in the east.">3. lack of water filtration</button></h1>
+                 <h1><button class="pop-up" data-text="
+                    Inorganic arsenic had been used as a pesticide in cotton fields and orchards, although that use was voluntarily canceled in the late 1980s and the early 1990s.3 
+                    Some forms of organic arsenic continue to be applied to cotton fields.">4. pesticide contact</button></h1>
+            </div>
+        </div>
+        <div class="down-button"> 
+            <a class="downbtn" href="#section-six" role="button">→</a>
+        </div>
+    </main>
+
+    <main id="section-six">
+        <div id="tips">
+            <h1 class="hover-underline-animation">sources.</h1>
+        </div>
+
+        <div class="sectionsix-container">
+            <!--link 1-->
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/link_logos/heathline.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="card-title">Healthline</h1>
+                  <a href="https://www.healthline.com/health/arsenic-poisoning" class="sourcebtn">source</a>
+                </div>
+              </div>
+
+            <!--link 2-->
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/link_logos/nih.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="card-title">NIH</h1>
+                  <a href="https://www.ncbi.nlm.nih.gov/books/NBK541125/" class="sourcebtn">source</a>
+                </div>
+            </div>
+
+            <!--link 3-->
+            <div class="card" style="width: 18rem;">
+                <img src="assets/link_logos/who.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="card-title">WHO</h1>
+                  <a href="https://www.who.int/news-room/fact-sheets/detail/arsenic#:~:text=Acute%20effects,and%20death%2C%20in%20extreme%20cases." class="sourcebtn">source</a>
+                </div>
+            </div>
+
+        </div>
+                
+    </main>
+
+  </body>
+
+</html>
